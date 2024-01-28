@@ -52,7 +52,7 @@ if st.button('Predict'):
     data_prep = preprocessor.fit_transform(data)
     data = data_prep[:1]
     
-    file = open('Obesity_model.pkl', 'rb')
+    file = open('Obesity_Model.pkl', 'rb')
     model = pickle.load(file)
     
     prediction = model.predict(data)
